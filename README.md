@@ -33,13 +33,12 @@ To visualize and compare how weighted vs uniform probability distributions affec
 ## 📁 Output Files
 
 - `Project_Analysis.ipynb`: Main notebook with code and plots
-- `line_comparison.png`: Graph comparing both models
-- `purchase_probability_comparison.csv`: Processed output for each age group
-- `result_analysis.txt`: 200-word results summary
+- `Conditional_Probability_Graph.png`: Graph comparing both models
+- `Report.txt`: 200-word results summary (won't be uploaded here)
 
 ## ✅ Key Insight
 
-Using a uniform distribution can oversimplify customer behavior. Weighted models more accurately reflect real-world differences across demographics.
+Using a uniform distribution can oversimplify customer behavior. Weighted models more accurately reflect real-world differences across demographics. Detailed analysis will be found in the expected report.
 
 ## 💡 Future Ideas
 
