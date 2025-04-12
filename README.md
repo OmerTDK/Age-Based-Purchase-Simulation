@@ -28,7 +28,7 @@ To visualize and compare how weighted vs uniform probability distributions affec
 - The uniform model flattens out the variation between age groups
 - Graph clearly shows divergence between assumptions
 
-![Comparison Chart](line_comparison.png)
+![Comparison Chart](Conditional_Probability_Graph.png)
 
 ## 📁 Output Files
 
