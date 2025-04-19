@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Set seed for reproducibility
@@ -43,18 +42,7 @@ weighted_grouped = df_weighted.groupby('age')['purchased'].mean().reset_index(na
 uniform_grouped = df_weighted.groupby('age')['uniform_purchased'].mean().reset_index(name='uniform_prob')
 comparison_df = pd.merge(weighted_grouped, uniform_grouped, on='age')
 
-# Plotting comparison
-plt.figure(figsize=(10, 6))
-sns.lineplot(x='age', y='weighted_prob', data=comparison_df, marker='o', label='Weighted Model')
-sns.lineplot(x='age', y='uniform_prob', data=comparison_df, marker='s', linestyle='--', label='Uniform Model')
-plt.title('Purchase Probability by Age Group: Weighted vs Uniform Models')
-plt.xlabel('Age')
-plt.ylabel('Purchase Probability')
-plt.ylim(0, 1)
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.show()
+
 
 # Print key conditional probabilities
 weighted_70 = comparison_df[comparison_df['age'] == 70]['weighted_prob'].values[0]
